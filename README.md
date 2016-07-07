@@ -6,6 +6,5 @@ Game Unit Size: 12 wide and 16 high
 Brick size: 64:64
 
 Things to add:
--Project files
 
 -Game design documentation
