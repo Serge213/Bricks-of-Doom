@@ -1,14 +1,9 @@
 fileFormatVersion: 2
 guid: b15e2f9e7901668478fab03d49e10a5e
-timeCreated: 1468529451
+timeCreated: 1467352103
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_0
-    21300002: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_1
-    21300004: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_2
-    21300006: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_3
-    21300008: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_4
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +30,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,93 +38,18 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 30.1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_0
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 691
-        width: 257
-        height: 259
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -128.5, y: 129.5}
-        - {x: -128.5, y: -129.5}
-        - {x: 128.5, y: -129.5}
-        - {x: 128.5, y: 129.5}
-    - name: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_1
-      rect:
-        serializedVersion: 2
-        x: 442
-        y: 622
-        width: 282
-        height: 314
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -141, y: 157}
-        - {x: -141, y: -157}
-        - {x: 141, y: -157}
-        - {x: 141, y: 157}
-    - name: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_2
-      rect:
-        serializedVersion: 2
-        x: 907
-        y: 627
-        width: 223
-        height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -111.5, y: 137.5}
-        - {x: -111.5, y: -137.5}
-        - {x: 111.5, y: -137.5}
-        - {x: 111.5, y: 137.5}
-    - name: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_3
-      rect:
-        serializedVersion: 2
-        x: 1196
-        y: 649
-        width: 306
-        height: 271
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -153, y: 135.5}
-        - {x: -153, y: -135.5}
-        - {x: 153, y: -135.5}
-        - {x: 153, y: 135.5}
-    - name: dark-pixel-pattern-wallpaper-8216-8533-hd-wallpapers_4
-      rect:
-        serializedVersion: 2
-        x: 1609
-        y: 620
-        width: 233
-        height: 296
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -116.5, y: 148}
-        - {x: -116.5, y: -148}
-        - {x: 116.5, y: -148}
-        - {x: 116.5, y: 148}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
