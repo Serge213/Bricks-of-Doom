@@ -15,10 +15,15 @@ public class Ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.position = paddle.transform.position + paddleToBallVector;
+		if (!hasStarted) {
+			// Lock the ball relative to the paddle.
+			this.transform.position = paddle.transform.position + paddleToBallVector;
 
-		if (Input.GetMouseButton (0)) {
-			this.GetComponent<Rigidbody2D>().velocity = new Vector2 (2f, 10f);
+			// Wait for a mouse press to launch the ball.
+			if (Input.GetMouseButtonDown (0)) {
+				hasStarted = true;
+				this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (2f, 10f);
+			}
 		}
 
 	}
