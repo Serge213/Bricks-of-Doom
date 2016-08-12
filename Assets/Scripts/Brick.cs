@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Brick : MonoBehaviour {
 
 	public Sprite[] hitSprites;
