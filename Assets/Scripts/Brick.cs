@@ -4,12 +4,21 @@ using System.Collections;
 public class Brick : MonoBehaviour {
 
 	public Sprite[] hitSprites;
+	public static int breakableBricks = 0;
 
 	private int timesHit;
 	private LevelManager levelManager;
+	private bool isBreakable;
 
 	// Use this for initialization
 	void Start () {
+		isBreakable = (this.tag == "Breakable");
+		//test breakableBricks counter
+		if (isBreakable) {
+			breakableBricks++;
+			print (breakableBricks);
+		}
+
 		timesHit = 0;
 		levelManager = GameObject.FindObjectOfType<LevelManager> ();
 	}
@@ -20,17 +29,18 @@ public class Brick : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D col) {
-		bool isBreakable = (this.tag == "Breakable");
+		
 		if (isBreakable) {
 			HandleHits ();
 		}
-
 	}
 
 	void HandleHits () {
 		timesHit++;
 		int maxHits = hitSprites.Length + 1;
 		if (timesHit >= maxHits) {
+			breakableBricks--;
+			levelManager.BrickDestroyed ();
 			Destroy (gameObject);
 		} else {
 			LoadSprites ();
