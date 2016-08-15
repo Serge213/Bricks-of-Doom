@@ -6,15 +6,17 @@ public class LevelManager : MonoBehaviour {
 
     public void LoadLevel(string name) {
         SceneManager.LoadScene(name);
+		Brick.breakableBricks = 0;
     }
 
     public void QuitRequest() {
-        Debug.Log("I want to quit!");
+		Input.GetKeyDown(KeyCode.Escape);
         Application.Quit();
     }
 
 	public void LoadNextLevel() {
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		Brick.breakableBricks = 0;
 
 	}
 
