@@ -7,6 +7,8 @@ public class Brick : MonoBehaviour {
 	public Sprite[] hitSprites;
 	public static int breakableBricks = 0;
 	public AudioClip crack;
+	public GameObject debrisfx;
+
 
 	private int timesHit;
 	private LevelManager levelManager;
@@ -15,10 +17,9 @@ public class Brick : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isBreakable = (this.tag == "Breakable");
-		//test breakableBricks counter
 		if (isBreakable) {
 			breakableBricks++;
-			print (breakableBricks);
+		
 		}
 
 		timesHit = 0;
@@ -43,10 +44,16 @@ public class Brick : MonoBehaviour {
 		if (timesHit >= maxHits) {
 			breakableBricks--;
 			levelManager.BrickDestroyed ();
+			Debris ();
 			Destroy (gameObject);
 		} else {
 			LoadSprites ();
 		}
+	}
+
+	void Debris()
+	{
+		Instantiate (debrisfx, gameObject.transform.position, Quaternion.identity);
 	}
 
 	void LoadSprites () {
